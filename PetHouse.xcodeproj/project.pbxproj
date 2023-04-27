@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		35A0DD6F29FA372A002A6B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0DD6E29FA372A002A6B73 /* AppDelegate.swift */; };
 		35A0DD7129FA372A002A6B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0DD7029FA372A002A6B73 /* SceneDelegate.swift */; };
-		35A0DD7329FA372A002A6B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0DD7229FA372A002A6B73 /* ViewController.swift */; };
+		35A0DD7329FA372A002A6B73 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0DD7229FA372A002A6B73 /* SignInViewController.swift */; };
 		35A0DD7629FA372A002A6B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A0DD7429FA372A002A6B73 /* Main.storyboard */; };
 		35A0DD7829FA372B002A6B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A0DD7729FA372B002A6B73 /* Assets.xcassets */; };
 		35A0DD7B29FA372B002A6B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A0DD7929FA372B002A6B73 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		35A0DD6B29FA372A002A6B73 /* PetHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A0DD6E29FA372A002A6B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A0DD7029FA372A002A6B73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35A0DD7229FA372A002A6B73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35A0DD7229FA372A002A6B73 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		35A0DD7529FA372A002A6B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35A0DD7729FA372B002A6B73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A0DD7A29FA372B002A6B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		35A0DD6D29FA372A002A6B73 /* PetHouse */ = {
 			isa = PBXGroup;
 			children = (
-				35A0DD6E29FA372A002A6B73 /* AppDelegate.swift */,
-				35A0DD7029FA372A002A6B73 /* SceneDelegate.swift */,
-				35A0DD7229FA372A002A6B73 /* ViewController.swift */,
-				35A0DD7429FA372A002A6B73 /* Main.storyboard */,
+				35A0DD8429FA3769002A6B73 /* App */,
+				35A0DD8329FA3758002A6B73 /* ViewControllers */,
+				35A0DD8229FA374B002A6B73 /* Storyboards */,
 				35A0DD7729FA372B002A6B73 /* Assets.xcassets */,
-				35A0DD7929FA372B002A6B73 /* LaunchScreen.storyboard */,
-				35A0DD7C29FA372B002A6B73 /* Info.plist */,
 			);
 			path = PetHouse;
+			sourceTree = "<group>";
+		};
+		35A0DD8229FA374B002A6B73 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				35A0DD7429FA372A002A6B73 /* Main.storyboard */,
+				35A0DD7929FA372B002A6B73 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		35A0DD8329FA3758002A6B73 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				35A0DD7229FA372A002A6B73 /* SignInViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		35A0DD8429FA3769002A6B73 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				35A0DD6E29FA372A002A6B73 /* AppDelegate.swift */,
+				35A0DD7029FA372A002A6B73 /* SceneDelegate.swift */,
+				35A0DD7C29FA372B002A6B73 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A0DD7329FA372A002A6B73 /* ViewController.swift in Sources */,
+				35A0DD7329FA372A002A6B73 /* SignInViewController.swift in Sources */,
 				35A0DD6F29FA372A002A6B73 /* AppDelegate.swift in Sources */,
 				35A0DD7129FA372A002A6B73 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PetHouse/Info.plist;
+				INFOPLIST_FILE = PetHouse/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PetHouse/Info.plist;
+				INFOPLIST_FILE = PetHouse/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
