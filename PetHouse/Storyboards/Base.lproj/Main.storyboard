@@ -432,7 +432,7 @@
         <!--Pet House Clinic-->
         <scene sceneID="6Yp-kD-mRn">
             <objects>
-                <viewController id="Y9r-vO-6Ok" sceneMemberID="viewController">
+                <viewController id="Y9r-vO-6Ok" customClass="MainViewController" customModule="PetHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0h5-JO-Por">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -497,15 +497,23 @@
                                     <constraint firstAttribute="height" constant="135" id="D2b-WA-qVy"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="petOne" id="ip7-Ax-pVt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pet" id="LHc-bn-ptx">
                                         <rect key="frame" x="0.0" y="50" width="288" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LHc-bn-ptx" id="WKU-Ug-scg">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="info" id="ip7-Ax-pVt">
+                                        <rect key="frame" x="0.0" y="93.5" width="288" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ip7-Ax-pVt" id="cKd-Ux-3s0">
                                             <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BM1-R4-WTu" kind="presentation" id="92x-0Q-gM1"/>
+                                            <segue destination="BM1-R4-WTu" kind="presentation" identifier="info" id="92x-0Q-gM1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -549,6 +557,9 @@
                     <navigationItem key="navigationItem" title="Pet House Clinic" id="ZOr-zf-zT0">
                         <barButtonItem key="rightBarButtonItem" id="cB7-N6-bW9"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="petTableView" destination="shP-N5-Fjd" id="2x3-aG-5vo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCX-rk-iOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Pir-3c-Pjz">
@@ -828,7 +839,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DVY-cG-DfV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="RIi-D3-USY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1310,6 +1321,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hsE-Ml-brS"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jdg-MI-zv7">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
